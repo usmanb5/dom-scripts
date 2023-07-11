@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment - 1 </title>
+</head>
+<body>
+    <div class="bigone">
+        <h1>Counter App</h1>
+        <div class="midbtns">
+            <button onclick="hey()" id="one">Decrement by 1</button>
+            <span id="displayValue">0</span>            
+            <button  onclick="hi()" >Increment by 1</button>
+        </div>
+        <button  onclick="ohhhi()">Reset Value</button>
+    </div>
+       <!-- JAVASCRIPT  -->
+    <script>
+        let n = 0;
+        function hey() {
+            document.getElementById("displayValue").innerText = --n
+        }
+        function hi() {
+            document.getElementById("displayValue").innerText = ++n
+
+        }
+        function ohhhi() {
+            n = 0
+            document.getElementById("displayValue").innerText = n
+
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

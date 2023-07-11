@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text highlight above 8 characters</title>
+</head>
+<style>
+    #para{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam explicabo tempora consequuntur, ipsam voluptates.</p>
+
+    
+</body>
+
+<script>
+    let p = document.getElementById("para")
+    console.log(p);
+    p.addEventListener('click',highlight)
+    function highlight() {
+        let arrOfWords = p.innerText.split(" ")
+        console.log(arrOfWords);
+        for(let i = 0; i<arrOfWords.length; i++){
+            if(arrOfWords[i].length > 8) {
+            arrOfWords[i] = `<span style="color:yellow">${arrOfWords[i]}</span>`
+        }
+        p.innerHTML = arrOfWords.join(" ")
+         }
+        }
+      
+    
+
+</script>
+</html>

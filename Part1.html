@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part-1</title>
+</head>
+<body>
+    <!-- ID  -->
+    <p id="abc">Tony Stark is a <span>Handsome</span> scientist</p>
+
+    <!-- Class  -->
+    <ul>
+        <li class="af">dgfg</li>
+        <li class="af">sdsd</li>
+        <li class="af">jkio</li>
+    </ul>
+
+    <!-- TagName  -->
+    <h1>Raiden</h1>
+    <h1>Reptile</h1>
+    <h1>Smoke</h1>
+
+    <!-- QuerySelector  -->
+    <h5>Ronaldo</h5>
+    <h5 class = "arg">Messi</h5>
+    <h5 id ="brazil">Neymar</h5>
+
+    <script>
+        // ID 
+        let acha = document.getElementById("abc");
+        console.log(acha.innerHTML);
+
+
+        // Class 
+        let phal = document.getElementsByClassName("af");
+        console.log(phal);
+        phal[0].innerText = "grapes";
+        phal[1].innerText = "apple";
+        phal[2].innerText = "oranges";
+
+
+        // TagName 
+        let MK11 = document.getElementsByTagName("h1")
+        console.log(MK11)
+        MK11[0].innerText = "Scorpion";
+        MK11[0].style.color = "red"
+
+        // Query Selector 
+        let football = document.querySelector(".arg");
+        console.log(football);
+        football.className = "barcelona"
+        football.className = "barcelona fcb spain"
+        football.setAttribute("title","GOAT");
+
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text on Button click.</title>
+</head>
+<body>
+    <h2 id="heading">The most affordable learning
+        platform</h2>
+        <button onclick="change()" id="btn">Click on this to Switch above statement</button>
+    
+</body>
+
+<script>
+    function change() {
+        let heading = document.getElementById("heading")
+        if(heading.innerHTML === "The most affordable learning platform" ) {
+            heading.innerHTML = "PW Skills"
+            heading.style.color = "orange"
+        } else {
+             heading.innerHTML = "The most affordable learning platform" 
+             heading.style.backgroundColor = "black"
+             heading.style.color = "red"
+        }      
+    }
+    
+
+</script>
+</html>
