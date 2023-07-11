@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text on Button click.</title>
+</head>
+<body>
+    <h2 id="heading">The most affordable learning
+        platform</h2>
+        <button  id="btn">Click on this to Switch above statement</button>
+    
+</body>
+
+<script>
+    let btn = document.querySelector("button")
+    btn.addEventListener('click', turnaround);
+    function turnaround() {
+        let heading = document.querySelector("h2")
+        if(heading.innerHTML === "The most affordable learning platform" ) {
+            heading.innerHTML = "PW Skills"
+        } else {
+            heading.innerHTML  = "The most affordable learning platform"
+        }
+
+    }
+
+  
+
+</script>
+</html>
